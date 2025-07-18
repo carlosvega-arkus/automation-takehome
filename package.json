@@ -1,0 +1,20 @@
+{
+  "devDependencies": {
+    "@cypress/grep": "^4.1.0",
+    "@faker-js/faker": "^9.9.0",
+    "cypress": "^14.5.2",
+    "cypress-mochawesome-reporter": "^4.0.0",
+    "dotenv": "^17.2.0"
+  },
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "test:ui": "cypress run --spec 'cypress/e2e/ui/**/*.cy.js'",
+    "test:api": "cypress run --spec 'cypress/e2e/api/**/*.cy.js'",
+    "test:headless": "cypress run --headless",
+    "test:headed": "cypress run --headed",
+    "test:e2e": "cypress run --env grepTags=@e2d",
+    "test:isolated": "cypress run --env grepTags=@isolated",
+    "open:report": "open cypress/reports/execution-report.html"
+  }
+}
