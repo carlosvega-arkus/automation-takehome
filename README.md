@@ -44,17 +44,7 @@ Test automation framework built with Cypress and JavaScript. This project implem
 
 3. Run tests to verify everything works
 
-    npm run cypress:run
-
-## Test Credentials
-
-TEST_USER_USERNAME=your_username
-TEST_USER_PASSWORD=your_password
-
-## Cypress Configuration
-
-CYPRESS_BASE_URL=https://demo.playwright.dev/todomvc
-CYPRESS_API_BASE_URL=https://dummyjson.com
+    npm run cypress:validation
 
 ### Configuration Files
 
