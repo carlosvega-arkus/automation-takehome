@@ -3,7 +3,7 @@
 
 ## Description
 
-Test automation framework built with Cypress and JavaScript for Todo App. This project implements the Page Object Model (POM) pattern and uses Mochawesome for detailed reporting.
+Test automation framework built with Cypress and JavaScript. This project implements the Page Object Model (POM) pattern and uses Mochawesome for reporting.
 
 ## Objectives
 
