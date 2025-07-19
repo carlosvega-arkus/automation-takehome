@@ -35,7 +35,7 @@ Test automation framework built with Cypress and JavaScript. This project implem
 
     ```bash
     git clone 'https://github.com/carlosvega-arkus/automation-takehome.git'
-    cd Take-home\
+    cd automation-takehome\
     ```
 
 2. Install dependencies
