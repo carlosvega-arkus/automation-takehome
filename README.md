@@ -44,7 +44,7 @@ Test automation framework built with Cypress and JavaScript. This project implem
 
 3. Run tests to verify everything works
 
-    npm run cypress:validation
+    npm run run:api
 
 ## Configuration Files
 
