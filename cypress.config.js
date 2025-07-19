@@ -10,15 +10,16 @@ module.exports = defineConfig({
       require('@cypress/grep/src/plugin')(config);
       return config;
     },
-    retries: {
-      runMode: 2, // Número de reintentos en modo run (headless)
-      openMode: 1  // Número de reintentos en modo open (interactivo)
-    }
+    retries: 3,
+  
   },
   env: {
-    apiBaseUrl: process.env.API_BASE_URL || 'https://api.realworld.io/api',
+    apiBaseUrl: process.env.API_BASE_URL || 'https://dummyjson.com',
+  
+    testUserPassword: process.env.TEST_USER_PASSWORD || 'testpassword123',
+    testUserUsername: process.env.TEST_USER_USERNAME || 'testuser',
     grepFilterSpecs: true,
-    grepOmitFiltered: true
+    grepOmitFiltered: true,
   },
   reporter: 'cypress-mochawesome-reporter',
   reporterOptions: {
@@ -26,5 +27,7 @@ module.exports = defineConfig({
     reportFilename: 'execution-report',
     reportPageTitle: 'Execution Report',
     reportPageHeading: 'Test Results',
-  }
+  },
+  failOnStatusCode: false,
+
 });

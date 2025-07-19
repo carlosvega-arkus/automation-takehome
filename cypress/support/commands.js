@@ -23,3 +23,14 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('GetAllUsers', () => {
+    return cy.request({
+        method: 'GET',
+        url: `${Cypress.env('apiBaseUrl')}/users`,
+    }).then((response) => {
+        cy.log('Users Found')
+        return cy.wrap(response.body);
+
+    });
+});

@@ -3,7 +3,7 @@ import { faker } from '@faker-js/faker';
 import registerCypressGrep from '@cypress/grep'
 registerCypressGrep()
 
-describe('Todo App', () => {
+describe('Todo App', {tags: ['@ui']}, () => {
     let todoTask = faker.lorem.sentence();
     const todo = new todoPage();
 
@@ -11,7 +11,7 @@ describe('Todo App', () => {
         cy.visit('/');
     });
 
-    it('ToDo task creation E2E', { tags: ['@e2d'] }, () => {
+    it('ToDo task creation E2E', { tags: ['@e2e'] }, () => {
         todo.addTodo(todoTask);
         todo.completeTodo(todoTask);
         todo.deleteTodo(todoTask);

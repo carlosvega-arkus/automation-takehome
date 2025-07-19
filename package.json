@@ -9,12 +9,22 @@
   "scripts": {
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
-    "test:ui": "cypress run --spec 'cypress/e2e/ui/**/*.cy.js'",
-    "test:api": "cypress run --spec 'cypress/e2e/api/**/*.cy.js'",
-    "test:headless": "cypress run --headless",
-    "test:headed": "cypress run --headed",
-    "test:e2e": "cypress run --env grepTags=@e2d",
-    "test:isolated": "cypress run --env grepTags=@isolated",
+    
+    "run:ui": "cypress run --spec 'cypress/e2e/ui/**/*.cy.js' --env grepTags=@ui",
+    "runt:api": "cypress run --spec 'cypress/e2e/api/**/*.cy.js' --env grepTags=@api",
+    "run:headless": "cypress run --headless",
+    "run:headed": "cypress run --headed",
+    "run:ui-e2e": "cypress run --spec 'cypress/e2e/ui/**/*.cy.js' --env grepTags=@e2e",
+    "run:ui-isolated": "cypress run --spec 'cypress/e2e/ui/**/*.cy.js' --env grepTags=@isolated",
+    "run:api-positive": "cypress run --spec 'cypress/e2e/api/**/*.cy.js' --env grepTags=@positivePath",
+    "run:api-negative": "cypress run --spec 'cypress/e2e/api/**/*.cy.js' --env grepTags=@negativePath",
+    "open:ui": "cypress open  --env grepTags=@ui",
+    "open:api": "cypress open  --env grepTags=@api",
+    "open:ui-e2e": "cypress open --env grepTags=@e2e",
+    "open:ui-isolated": "cypress open --env grepTags=@isolated",
+    "open:api-positive": "cypress open --env grepTags=@positivePath",
+    "open:api-negative": "cypress open --env grepTags=@negativePath",
+
     "open:report": "open cypress/reports/execution-report.html"
   }
 }

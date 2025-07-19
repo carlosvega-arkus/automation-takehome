@@ -53,11 +53,11 @@
 
 ### API Testing
 
--Endpoints
- POST /users – Create a new user
- GET /users/{id} – Fetch user details
- DELETE /users/{id} – Delete a user
- POST /login – Authenticate user and get token
+- Endpoints
+- - POST /users – Create a new user
+- - GET /users/{id} – Fetch user details
+- - DELETE /users/{id} – Delete a user
+- - POST /login – Authenticate user and get token
 
 ### UI Testing
 
