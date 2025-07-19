@@ -1,4 +1,6 @@
-require('dotenv').config();
+require('dotenv').config({
+  path: process.env.NODE_ENV ? `.env.${process.env.NODE_ENV}` : '.env'
+});
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
