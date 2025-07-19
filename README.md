@@ -46,7 +46,7 @@ Test automation framework built with Cypress and JavaScript. This project implem
 
     npm run cypress:validation
 
-### Configuration Files
+## Configuration Files
 
 - cypress.config.js - Main Cypress configuration
 - .env.example - Environment variables template
@@ -99,15 +99,6 @@ The framework supports test execution across different environments using enviro
 - `.env.dev` - Development environment
 - `.env.stg` - Staging environment
 
-### Environment Variables
-
-```bash
-API_BASE_URL=https://dummyjson.com
-UI_BASE_URL=https://demo.playwright.dev/todomvc
-TEST_USER_USERNAME=your_username
-TEST_USER_PASSWORD=your_password
-```
-
 ### Environment Commands
 
 #### Development
@@ -128,6 +119,7 @@ NODE_ENV=dev cypress run --spec 'cypress/e2e/api/**/*.cy.js'
 
 # Run UI tests in staging
 NODE_ENV=stg cypress run --spec 'cypress/e2e/ui/**/*.cy.js'
+```
 
 ## Test Scenarios
 
