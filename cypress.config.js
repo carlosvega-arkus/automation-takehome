@@ -17,9 +17,8 @@ module.exports = defineConfig({
   },
   env: {
     apiBaseUrl: process.env.API_BASE_URL || 'https://dummyjson.com',
-  
-    testUserPassword: process.env.TEST_USER_PASSWORD || 'testpassword123',
-    testUserUsername: process.env.TEST_USER_USERNAME || 'testuser',
+    testUserUsername: process.env.TEST_USER_USERNAME || 'emilys',
+    testUserPassword: process.env.TEST_USER_PASSWORD || 'emilyspass',
     grepFilterSpecs: true,
     grepOmitFiltered: true,
   },

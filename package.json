@@ -9,7 +9,7 @@
   "scripts": {
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
-    "cypress:validation": "cypress run --spec 'cypress/e2e/validation-spec.cy.js'",
+    "cypress:validation": "cypress run --spec 'cypress/e2e/validation-spec.js'",
     
     "run:ui": "cypress run --spec 'cypress/e2e/ui/**/*.cy.js' --env grepTags=@ui",
     "run:api": "cypress run --spec 'cypress/e2e/api/**/*.cy.js' --env grepTags=@api",
